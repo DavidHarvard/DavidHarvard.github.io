@@ -292,6 +292,77 @@
 
 
   
+    <article id="post-java基础笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="java基础笔记"><a href="#java基础笔记" class="headerlink" title="java基础笔记"></a>java基础笔记</h1><h2 id="第三章"><a href="#第三章" class="headerlink" title="第三章"></a>第三章</h2><h3 id="数组api汇总"><a href="#数组api汇总" class="headerlink" title="数组api汇总"></a>数组api汇总</h3><h4 id="数组的打印-Arrays-toString"><a href="#数组的打印-Arrays-toString" class="headerlink" title="数组的打印 Arrays.toString()"></a>数组的打印 Arrays.toString()</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Arrays.toString(luckArray));</span><br></pre></td></tr></table></figure>
+
+<p>数组的复制 copyOf()</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">int[] ints = Arrays.copyOf(luckArray, luckArray.length);</span><br></pre></td></tr></table></figure>
+
+<p>数组的复制copyOf()</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int[] ints1 = Arrays.copyOfRange(luckArray, 1, 3);</span><br><span class="line">(type[]a int start,int end)</span><br></pre></td></tr></table></figure>
+
+<p>数组的排序sort</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Arrays.sort(smallPrimes);</span><br><span class="line">使用的是快速排序算法</span><br></pre></td></tr></table></figure>
+
+<p>数组的查找 binarySearch(type[]a ,type y)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Arrays.binarySearch(luckArray,5));</span><br></pre></td></tr></table></figure>
+
+<p>数组的查找binarySearch(type[]a ,int start,int end,type y)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Arrays.binarySearch(smallPrimes,0,4,32));</span><br></pre></td></tr></table></figure>
+
+<p>将数组中所有的数据设置为v fill(type[] a , type v)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Arrays.fill(ints1,20);</span><br></pre></td></tr></table></figure>
+
+<p>比较两个数组是否相同 equals(type[]a type[] b)</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">System.out.println(Arrays.equals(smallPrimes,luckArray));</span><br></pre></td></tr></table></figure>
+
+<p>快速打印一个二维数组</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">int[][] magicSquare = &#123;&#123;15,23,43,23&#125;,&#123;123,324,234&#125;&#125;;</span><br><span class="line">System.out.println(Arrays.deepToString(magicSquare));</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/01/05/java%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
   
 
 
